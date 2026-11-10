@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 242" width="820" height="242" role="img" aria-labelledby="title description">
+  <title id="title">W3F7 · PowerT-0704</title>
+  <desc id="description">A terminal cycles through Hello, GitHub. Building useful tools. Code meets motion.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#0b1421"/>
+      <stop offset="1" stop-color="#101f35"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".8" cy=".46" r=".56">
+      <stop stop-color="#235874" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#235874" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x2="1" y2="0">
+      <stop stop-color="#66ebcf"/>
+      <stop offset="1" stop-color="#72b6ff"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0v24" fill="none" stroke="#93bbd7" stroke-opacity=".10"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect x="1" y="1" width="818" height="240" rx="20"/>
+    </clipPath>
+  </defs>
+  <style>
+    .label, .line { font-family: Consolas, "Liberation Mono", Menlo, monospace; }
+    .name { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+    .line { opacity: 0; }
+    .first { opacity: 1; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .line {
+        opacity: 0;
+        animation: turn 11.4s step-end infinite;
+      }
+      .second { animation-delay: 3.8s; }
+      .third { animation-delay: 7.6s; }
+      .line text, .cursor {
+        animation-duration: 11.4s;
+        animation-delay: inherit;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(var(--characters), end);
+      }
+      .line text { animation-name: type; }
+      .cursor { animation-name: follow; }
+    }
+
+    @keyframes turn {
+      0% { opacity: 1; }
+      33.333%, 100% { opacity: 0; }
+    }
+    @keyframes type {
+      0%, 32.8%, 100% { clip-path: inset(0 100% 0 0); }
+      12%, 26% { clip-path: inset(0); }
+    }
+    @keyframes follow {
+      0%, 32.8%, 100% { transform: translateX(0); }
+      12%, 26% { transform: translateX(var(--travel)); }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="820" height="242" fill="url(#background)"/>
+    <rect width="820" height="242" fill="url(#glow)"/>
+    <rect x="493" width="327" height="242" fill="url(#grid)"/>
+    <path d="M0 0h820v2H0z" fill="url(#accent)"/>
+  </g>
+  <rect x="1" y="1" width="818" height="240" rx="20" fill="none" stroke="#426581" stroke-opacity=".75"/>
+
+  <circle cx="46" cy="38" r="4" fill="#66ebcf"/>
+  <text class="label" x="60" y="44" fill="#b5cee3" font-size="16" letter-spacing="1.7">PERSONAL WORKBENCH</text>
+  <text class="name" x="38" y="113" fill="#f0f7ff" font-size="74" font-weight="750" letter-spacing="-3">W3F7<tspan fill="#66ebcf">.</tspan></text>
+  <text class="label" x="43" y="145" fill="#a6bdd2" font-size="19">@PowerT-0704</text>
+
+  <g fill="none" transform="translate(650 121)">
+    <circle r="89" stroke="#93bbd7" stroke-opacity=".24"/>
+    <circle r="70" stroke="#93bbd7" stroke-opacity=".30" stroke-dasharray="2 5"/>
+    <path d="M-106 0h28m156 0h28M0-106v28M0 78v28" stroke="#93bbd7" stroke-opacity=".37"/>
+    <ellipse rx="112" ry="42" transform="rotate(-29)" stroke="url(#accent)" stroke-opacity=".61"/>
+    <circle cx="-76" cy="64" r="4" fill="#66ebcf"/>
+    <circle cx="80" cy="-59" r="4" fill="#72b6ff"/>
+    <rect x="-41" y="-34" width="82" height="68" rx="13" fill="#0e1d30" stroke="#5e8bab"/>
+    <path d="m-17-11-12 11 12 11m34-22 12 11-12 11M6-16-6 16" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="38" y="168" width="430" height="47" rx="9" fill="#08131f" stroke="#38546f"/>
+  <path d="m56 185 7 6-7 6" fill="none" stroke="#66ebcf" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#c6f5ed" font-size="25">
+    <g class="line first" style="--characters: 14; --travel: 210px">
+      <text x="78" y="200" textLength="210" lengthAdjust="spacingAndGlyphs">Hello, GitHub.</text>
+      <rect class="cursor" x="81" y="181" width="2" height="23" rx="1" fill="#66ebcf"/>
+    </g>
+    <g class="line second" style="--characters: 22; --travel: 330px">
+      <text x="78" y="200" textLength="330" lengthAdjust="spacingAndGlyphs">Building useful tools.</text>
+      <rect class="cursor" x="81" y="181" width="2" height="23" rx="1" fill="#66ebcf"/>
+    </g>
+    <g class="line third" style="--characters: 18; --travel: 270px">
+      <text x="78" y="200" textLength="270" lengthAdjust="spacingAndGlyphs">Code meets motion.</text>
+      <rect class="cursor" x="81" y="181" width="2" height="23" rx="1" fill="#66ebcf"/>
+    </g>
+  </g>
+</svg>
