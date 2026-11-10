@@ -24,25 +24,21 @@
   <style>
     .label, .line { font-family: Consolas, "Liberation Mono", Menlo, monospace; }
     .name { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
-    .line { opacity: 0; }
-    .first { opacity: 1; }
-
-    @media (prefers-reduced-motion: no-preference) {
-      .line {
-        opacity: 0;
-        animation: turn 11.4s step-end infinite;
-      }
-      .second { animation-delay: 3.8s; }
-      .third { animation-delay: 7.6s; }
-      .line text, .cursor {
-        animation-duration: 11.4s;
-        animation-delay: inherit;
-        animation-iteration-count: infinite;
-        animation-timing-function: steps(var(--characters), end);
-      }
-      .line text { animation-name: type; }
-      .cursor { animation-name: follow; }
+    .line {
+      opacity: 0;
+      animation: turn 11.4s step-end infinite;
     }
+    .first { opacity: 1; }
+    .second { animation-delay: 3.8s; }
+    .third { animation-delay: 7.6s; }
+    .line text, .cursor {
+      animation-duration: 11.4s;
+      animation-delay: inherit;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(var(--characters), end);
+    }
+    .line text { animation-name: type; }
+    .cursor { animation-name: follow; }
 
     @keyframes turn {
       0% { opacity: 1; }
