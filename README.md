@@ -13,6 +13,6 @@
 <ul>
   <li><a href="https://github.com/PowerT-0704/EzQR-Tools"><strong>易码 EzQR-Tools</strong></a> · 桌面二维码识别与生成工具</li>
   <li><a href="https://github.com/PowerT-0704/CampusLink"><strong>CampusLink</strong></a> · 宜宾校区校园网自动连接与掉线重连</li>
-  <li><a href="https://github.com/PowerT-0704/W3F7-Video-Toolsbar></strong></a>Video_Toolsbar </strong></a> · 本地录音转录 封面封装</li>
+  <li><a href="https://github.com/PowerT-0704/W3F7-Video-Toolsbar><strong>Video_Toolsbar</strong></a> · 本地录音转录 封面封装</li>
 </ul>
  
